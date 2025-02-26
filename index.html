@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forge Esports - Pushing the boundaries of competitive gaming and technology.">
+    <meta name="keywords" content="Esports, Gaming, Competitive, Forge Esports">
+    <meta name="author" content="Forge Esports">
+    <title>Forge Esports</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script defer src="scroll.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header id="header" class="bg-gray-800 p-4 fixed w-full top-0 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Forge Esports text with logo next to it -->
+            <div class="flex items-center space-x-2">
+                <img src="Assets/Images and videos/burger-menu-svgrepo-com.svg" alt="Menu" class="h-8 w-auto" id="Hamburgericon">
+                <img src="Assets/Images and videos/ForgeLogo.svg" alt="Forge Esports Logo" class="h-8 w-auto">
+                <h1 class="text-2xl font-bold cursor-pointer" id="forgeTitle" onclick="window.location.href='index.html'">Forge Esports</h1>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div id="dropdownMenu" class="hidden absolute bg-gray-800 p-4 rounded shadow-lg top-12 left-0 w-48 text-center lg:static lg:flex lg:w-auto lg:space-x-4 lg:bg-transparent lg:p-0">
+                <ul class="flex flex-col lg:flex-row lg:space-x-4">
+                    <li><a href="index.html" class="hover:text-orange-400">Home</a></li>
+                    <li><a href="Aboutus.html" class="hover:text-orange-400">About</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Dark Mode Toggle Button -->
+            <label class="switch">
+                <input id="input" type="checkbox" />
+                <div class="slider round">
+                    <div class="sun-moon">
+                        <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <svg id="star-1" class="star" viewBox="0 0 20 20">
+                            <path
+                                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        <svg id="star-2" class="star" viewBox="0 0 20 20">
+                            <path
+                                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        <svg id="star-3" class="star" viewBox="0 0 20 20">
+                            <path
+                                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        <svg id="star-4" class="star" viewBox="0 0 20 20">
+                            <path
+                                d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <main class="pt-20 text-center">
+        <section class="hero bg-cover bg-center h-[500px] flex flex-col items-center justify-center text-center relative rounded-halfoverflow-hidden transition-all duration-500 ease-in-out" id="heroSection">
+            <video id="heroVideo" class="hero-video absolute top-0 left-0 w-full h-full object-cover z-8" autoplay muted loop>
+                <source src="Assets/Images and videos/Flame Frg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2 class="text-4xl font-bold z-10 text-white">Welcome to Forge Esports</h2>
+            <p class="mt-2 text-lg z-10 text-white">Innovating and dominating the esports scene.</p>
+            <a href="https://discord.gg/jexchYcHT9" target="_blank" class="mt-4 px-6 py-2 bg-orange-500 rounded shadow hover:bg-orange-400 z-10">Join Us</a>
+        </section>
+    </main>
+
+    <footer class="p-4 text-center fixed bottom-0 w-full">
+        <p>&copy; 2025 Forge Esports. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
